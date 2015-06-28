@@ -1,10 +1,11 @@
-FROM ubuntu:14.04
-RUN sudo apt-get install git wget -y
-RUN git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-RUN git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-RUN echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-RUN echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-CMD ['/bin/bash']
+FROM macool/baseimage-rbenv-docker
+MAINTAINER Jackie Liu ljinke@gmail.com
+RUN rbenv install 2.1.2
+RUN rbenv global 2.1.2
+ADD ~/Github/cassie ~/Cassie
+WORKDIR ~/Cassie
+EXPOSE 3000
+CMD [ "foreman start" ]
 
 
 
