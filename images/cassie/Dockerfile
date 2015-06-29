@@ -1,5 +1,6 @@
 FROM macool/baseimage-rbenv-docker
 MAINTAINER Jackie Liu, ljinke@gmail.com
+RUN apt-get update
 RUN apt-get install libmagickwand-dev imagemagick graphicsmagick ghostscript -y
 RUN apt-get install libpcre3 libpcre3-dev poppler-utils tnef clamav -y
 RUN apt-get install nodejs phantomjs graphviz -y
