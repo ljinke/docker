@@ -1,0 +1,12 @@
+report:
+  build: .
+  ports:
+   - "8080:8080"
+  volumes:
+   - .:/code
+  links:
+   - mysql
+mysql:
+  image: mysql
+  ports:
+   - "3306:3306"
