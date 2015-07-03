@@ -1,5 +1,5 @@
 report:
-  build: .
+  build: ../../images/gemini/
   ports:
    - "8080:8080"
   volumes:
