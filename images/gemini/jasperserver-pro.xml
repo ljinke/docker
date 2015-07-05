@@ -1,5 +1,5 @@
 <Context path="/" 
-	docBase="/Users/barrywalker/Git/Gemini/jasper/JasperServer" 
+	docBase="/code/jasper/JasperServer" 
             debug="5" reloadable="true" crossContext="true">
             
         <!-- maxActive: Maximum number of dB connections in pool. Make sure you

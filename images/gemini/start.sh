@@ -1,1 +1,1 @@
-docker run -idP -v /Users/liujin/doc_store/:/Users/liujin/doc_store/ ljinke/gemini
+docker run -idP -v /Users:/Users -v /Users/liujin/Github/Gemini:/code ljinke/gemini
