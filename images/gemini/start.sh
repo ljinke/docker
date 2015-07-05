@@ -1,0 +1,1 @@
+docker run -idP -v /Users/liujin/doc_store/:/Users/liujin/doc_store/ ljinke/gemini
