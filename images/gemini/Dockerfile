@@ -2,7 +2,7 @@ FROM tomcat:7
 
 MAINTAINER Jackie Liu, ljinke@gmail.com
 
-#RUN apt-get update && apt-get install -y mysql-client=5.6.25
+RUN apt-get update && apt-get install -y mysql-client
 
 ADD . /data/config
 

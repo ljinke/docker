@@ -1,1 +1,1 @@
-docker build -t ljinke/gemini .
+docker --tlsverify=false build -t ljinke/gemini .
