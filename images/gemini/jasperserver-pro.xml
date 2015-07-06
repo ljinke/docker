@@ -19,6 +19,6 @@
         maxActive="100" maxIdle="30" maxWait="20000"
         username="jasper" password="4321vela" 
         driverClassName="com.mysql.jdbc.Driver"
-        url="jdbc:mysql://localhost:3306/jasperserver_pro?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"  />
+        url="jdbc:mysql://db:3306/jasperserver_pro55?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"  />
 </Context>
 
